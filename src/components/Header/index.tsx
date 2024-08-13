@@ -89,7 +89,7 @@ export function Header() {
           </div>
         </div>
         <div className="premium-container">
-          Avance na sua carreira com Premium
+          Aproveite o Sales Navigator por apenas EUR0
         </div>
       </div>
     </HeaderContainer>

@@ -52,12 +52,8 @@ a {
   grid-template-columns: minmax(0, 225px) minmax(0, auto) minmax(0, 300px);
 
   gap: 1.25rem;
-  background-color: #f3f2ef;
-  /* padding: 40px; */
+  /* background-color: #f3f2ef; */
 }
 
 .grid-container > div {
-  background-color: #ffff;
-  text-align: center;
-  /* padding: 20px 0; */
 }
