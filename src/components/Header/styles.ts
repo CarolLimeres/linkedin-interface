@@ -125,7 +125,7 @@ export const HeaderContainer = styled.header`
     gap: 0.875rem;
 
     border-left: 1px solid rgba(140, 140, 140, 0.2);
-    height: 100%;
+    /* height: 100%; */
     padding-left: 1.2rem;
   }
 

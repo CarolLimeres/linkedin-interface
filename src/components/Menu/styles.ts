@@ -233,5 +233,6 @@ export const MenuContainer = styled.div`
 
   .find-more-container:hover {
     background-color: #f0f0f0;
+    color: #000000bf;
   }
 `;
