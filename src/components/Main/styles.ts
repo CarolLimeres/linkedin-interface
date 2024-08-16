@@ -21,7 +21,7 @@ export const MainContainer = styled.main`
     padding: 0.375rem 0.875rem 0.5rem 0.875rem;
     margin: 0.4rem 0;
     display: flex;
-    /* align-items: center; */
+
     gap: 0.5rem;
   }
 
@@ -93,5 +93,45 @@ export const MainContainer = styled.main`
 
   .article-icon {
     color: #e06847;
+  }
+
+  .select-most-container {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    cursor: pointer;
+  }
+
+  .border {
+    max-width: 100%;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 1rem;
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .select-viewing {
+    color: rgb(0 0 0 / 0.6);
+    font-size: 0.75rem;
+  }
+
+  .most-relevant-container {
+    display: flex;
+  }
+
+  .most-relevant {
+    color: rgb(0 0 0 / 0.9);
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .posts-container {
+    margin-top: 0.4rem;
   }
 `;

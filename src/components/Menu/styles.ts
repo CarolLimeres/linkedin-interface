@@ -92,7 +92,7 @@ export const MenuContainer = styled.div`
   }
 
   .connections-container {
-    margin-top: 0.5rem;
+    padding-top: 0.5rem;
 
     border-bottom: 0.0625rem solid rgba(140, 140, 140, 0.2);
     padding-bottom: 1rem;

@@ -3,6 +3,7 @@ import userImage from "../../../public/profile.jpg";
 import { Image } from "phosphor-react";
 import { CalendarPlus } from "phosphor-react";
 import { Article } from "phosphor-react";
+import { CaretDown } from "phosphor-react";
 
 export function Main() {
   return (
@@ -29,6 +30,17 @@ export function Main() {
             <Article size={24} weight="bold" className="article-icon"></Article>
             <span>Escrever artigo</span>
           </a>
+        </div>
+      </div>
+      <div className="select-most-container">
+        <hr className="border" />
+
+        <span className="select-viewing">Selecionar visualização do feed:</span>
+        <div className="most-relevant-container">
+          <span className="most-relevant">
+            Mais relevantes primeiro{" "}
+            <CaretDown size={14} weight="fill"></CaretDown>
+          </span>
         </div>
       </div>
       <div className="posts-container">TESTE DOS POSTS</div>
