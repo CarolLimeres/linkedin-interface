@@ -5,6 +5,15 @@ import { CalendarPlus } from "phosphor-react";
 import { Article } from "phosphor-react";
 import { CaretDown } from "phosphor-react";
 
+import { Post } from "../Post";
+
+const arrayLinks = [
+  "#pokemoncareers",
+  "#catchacareer",
+  "#pokemon",
+  "#WeChooseYou",
+];
+
 export function Main() {
   return (
     <MainContainer>
@@ -43,7 +52,20 @@ export function Main() {
           </span>
         </div>
       </div>
-      <div className="posts-container">TESTE DOS POSTS</div>
+      <div className="posts-container">
+        <Post
+          userphoto="profile.jpg"
+          username="Carolina Limeres"
+          position="Front-End Developer"
+          time={20}
+          text="I'm so beyond excited to announce that I'm starting a new role as an Front-End Developer at The Pokémon Company International this month! "
+          links={arrayLinks}
+          image="pokemon.jpg"
+          likes={50}
+          comments={10}
+          shares={2}
+        ></Post>
+      </div>
     </MainContainer>
   );
 }

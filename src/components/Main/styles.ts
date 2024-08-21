@@ -133,5 +133,6 @@ export const MainContainer = styled.main`
 
   .posts-container {
     margin-top: 0.4rem;
+    padding-bottom: 1.25rem;
   }
 `;

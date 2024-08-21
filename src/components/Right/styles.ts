@@ -105,7 +105,7 @@ export const RightContainer = styled.div`
   .image-game-container {
     display: flex;
     cursor: pointer;
-    gap: 0.25rem;
+    gap: 0.375rem;
   }
 
   .image-game-container:hover {
