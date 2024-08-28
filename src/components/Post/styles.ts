@@ -194,6 +194,7 @@ export const PostContainer = styled.div`
   .tolike-tocomment-toshare-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   .tolike-container,
@@ -208,8 +209,8 @@ export const PostContainer = styled.div`
     font-weight: 650;
 
     transition: background-color 0.2s;
-    border-radius: 5px;
-    padding: 0.875rem 1.125rem 0.75rem 1.125rem;
+    border-radius: 0.3125rem;
+    padding: 0.875rem 1.125rem 0.5rem 1.125rem;
   }
 
   .tolike-container:hover,
@@ -218,5 +219,72 @@ export const PostContainer = styled.div`
   .tosend-container:hover {
     background-color: #f0f0f0;
     color: rgb(0 0 0 / 0.9);
+  }
+
+  .add-comment-container {
+    padding: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+  }
+
+  .userphoto-addcomment {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  .form-comment {
+    flex-grow: 1;
+  }
+
+  .input-comment-container {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+  }
+
+  .smiley-comment-icon,
+  .media-comment-icon {
+    display: flex;
+    align-items: center;
+    color: rgb(0 0 0 / 0.75);
+
+    position: absolute;
+  }
+
+  .smiley-comment-icon {
+    right: 3.5rem;
+  }
+
+  .media-comment-icon {
+    right: 1rem;
+  }
+
+  .input-comment {
+    width: 100%;
+    padding: 0.625rem;
+    padding-right: 4.5rem;
+    border-radius: 1.25rem;
+    border: 0.0625rem solid rgb(0 0 0 / 0.3);
+    font-size: 0.875rem;
+  }
+
+  .comments-post-container {
+    text-align: left;
+  }
+
+  .more-relevant-button {
+    display: flex;
+    align-items: center;
+    gap: 0.125rem;
+    padding-left: 0.875rem;
+    color: rgb(0 0 0 / 0.6);
+    font-size: 0.875rem;
+    font-weight: 650;
+
+    margin-bottom: 0.75rem;
   }
 `;

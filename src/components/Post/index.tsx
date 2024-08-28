@@ -1,6 +1,6 @@
 import { PostContainer } from "./styles";
 
-import { GlobeHemisphereWest } from "phosphor-react";
+import { CaretDown, GlobeHemisphereWest } from "phosphor-react";
 import { ThumbsUp } from "phosphor-react";
 import { Heart } from "phosphor-react";
 import { ChatCircleText } from "phosphor-react";
@@ -8,6 +8,9 @@ import { Share } from "phosphor-react";
 import { PaperPlaneTilt } from "phosphor-react";
 import { DotsThree } from "phosphor-react";
 import { X } from "phosphor-react";
+import { Smiley } from "phosphor-react";
+import { Image } from "phosphor-react";
+import { Comment } from "../Comment";
 
 interface PostProps {
   userphoto: string;
@@ -137,6 +140,46 @@ export function Post({
           ></PaperPlaneTilt>
           <span>Enviar</span>
         </button>
+      </div>
+      <div className="add-comment-container">
+        <div className="userphoto-container">
+          <img
+            src={`/public/${userphoto}`}
+            alt=""
+            className="userphoto-addcomment"
+          />
+        </div>
+        <form action="" className="form-comment">
+          <div className="input-comment-container">
+            <input
+              type="text"
+              placeholder="Adicionar comentário"
+              className="input-comment"
+            />
+            <button className="smiley-comment-icon">
+              <Smiley size={24}></Smiley>
+            </button>
+            <button className="media-comment-icon">
+              <Image size={24} weight="fill"></Image>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div className="comments-post-container">
+        <div className="more-relevant-container">
+          <button className="more-relevant-button">
+            <span>Mais relevantes</span>
+            <CaretDown size={14} weight="fill"></CaretDown>
+          </button>
+        </div>
+        <Comment
+          userphotocomment="usercomment.jpg"
+          usernamecomment="Maurício Mendes Rossi"
+          userpositioncomment="Front-End Developer at Critical TechWorks | BMW Group"
+          commenttime={2}
+          commenttext="Parabéns pela conquista!😊"
+          commentlikes={2}
+        ></Comment>
       </div>
     </PostContainer>
   );
