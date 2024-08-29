@@ -122,15 +122,15 @@ export function Post({
       <div className="tolike-tocomment-toshare-container">
         <button className="tolike-container">
           <ThumbsUp size={24} className="tolike-icon"></ThumbsUp>
-          <span>Gostei</span>
+          <span className="options-post-text">Gostei</span>
         </button>
         <button className="tocomment-container">
           <ChatCircleText size={24} className="tocomment-icon"></ChatCircleText>
-          <span>Comentar</span>
+          <span className="options-post-text">Comentar</span>
         </button>
         <button className="toshare-container">
           <Share size={24} className="toshare-icon"></Share>
-          <span>Compartilhar</span>
+          <span className="options-post-text">Compartilhar</span>
         </button>
         <button className="tosend-container">
           <PaperPlaneTilt
@@ -138,7 +138,7 @@ export function Post({
             weight="fill"
             className="tosend-icon"
           ></PaperPlaneTilt>
-          <span>Enviar</span>
+          <span className="options-post-text">Enviar</span>
         </button>
       </div>
       <div className="add-comment-container">

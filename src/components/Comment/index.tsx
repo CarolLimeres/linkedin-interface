@@ -67,7 +67,10 @@ export function Comment({
           </div>
         </div>
         <div className="time-options-container">
-          <span>{commenttime} d</span>
+          <div className="time-comment-container">
+            <span>{commenttime}</span>
+            <span>d</span>
+          </div>
 
           <button className="dots-button-container">
             <DotsThree

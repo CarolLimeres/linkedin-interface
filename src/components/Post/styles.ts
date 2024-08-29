@@ -287,4 +287,29 @@ export const PostContainer = styled.div`
 
     margin-bottom: 0.75rem;
   }
+
+  @media (max-width: 1200px) {
+    .options-post-text {
+      display: none;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .options-post-text {
+      display: block;
+    }
+
+    .tolike-container,
+    .tocomment-container,
+    .toshare-container,
+    .tosend-container {
+      padding: 0.875rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .options-post-text {
+      display: none;
+    }
+  }
 `;

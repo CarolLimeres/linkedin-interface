@@ -17,6 +17,23 @@ const arrayLinks = [
 export function Main() {
   return (
     <MainContainer>
+      <div className="user-container">
+        <div className="background-container"></div>
+
+        <img src={userImage} alt="" className="image-media-container" />
+        <div className="name-office-container">
+          <div className="name-container">
+            <a href="">Carolina dos Santos Limeres</a>
+          </div>
+          <div className="office-container">Front-End Developer</div>
+        </div>
+      </div>
+      <div className="show-more-container">
+        <button className="show-more-button">
+          <span>Exibir mais</span>
+          <CaretDown size={20} weight="bold"></CaretDown>
+        </button>
+      </div>
       <div className="new-post-container">
         <div className="image-button-container">
           <img src={userImage} alt="" className="image-container" />
@@ -52,7 +69,8 @@ export function Main() {
           </span>
         </div>
       </div>
-      <div className="posts-container">
+
+      <div className="post-container">
         <Post
           userphoto="profile.jpg"
           username="Carolina Limeres"

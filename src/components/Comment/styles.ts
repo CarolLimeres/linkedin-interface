@@ -4,6 +4,8 @@ export const CommentContainer = styled.div`
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 
+  margin-bottom: 1.25rem;
+
   .user-time-options-container {
     display: flex;
     align-items: start;
@@ -51,6 +53,11 @@ export const CommentContainer = styled.div`
     gap: 0.375rem;
     font-size: 0.75rem;
     color: rgb(0 0 0 / 0.6);
+  }
+
+  .time-comment-container {
+    display: flex;
+    gap: 0.1875rem;
   }
 
   .dots-button-container {

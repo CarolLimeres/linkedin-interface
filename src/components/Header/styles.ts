@@ -67,6 +67,14 @@ export const HeaderContainer = styled.header`
     padding: 0 2.5rem;
   }
 
+  button {
+    all: unset;
+  }
+
+  .search-media-container {
+    display: none;
+  }
+
   .link-container {
     cursor: pointer;
     display: flex;
@@ -125,7 +133,7 @@ export const HeaderContainer = styled.header`
     gap: 0.875rem;
 
     border-left: 1px solid rgba(140, 140, 140, 0.2);
-    /* height: 100%; */
+    height: 100%;
     padding-left: 1.2rem;
   }
 
@@ -135,6 +143,10 @@ export const HeaderContainer = styled.header`
     align-items: center;
 
     cursor: pointer;
+  }
+
+  .button-options-media-container {
+    display: none;
   }
 
   .gradient-icon {
@@ -154,5 +166,85 @@ export const HeaderContainer = styled.header`
     text-decoration: underline;
     color: #915907;
     line-height: 1.5;
+  }
+
+  @media (max-width: 1092px) {
+    .search-container {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1040px) {
+    .search-container {
+      display: none;
+    }
+
+    .search-media-container {
+      display: block;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .text-container,
+    .text-arrow-container {
+      display: none;
+    }
+
+    .options-container {
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 710px) {
+      padding-left: 0.5rem;
+      justify-content: space-between;
+
+      .business-premium-container {
+        border: none;
+      }
+    }
+
+    @media (max-width: 670px) {
+      .options-container {
+        gap: 1.75rem;
+      }
+    }
+
+    @media (max-width: 570px) {
+      padding-left: 0;
+      justify-content: space-evenly;
+      /* gap: 1rem; */
+
+      .button-options-media-container {
+        display: block;
+        cursor: pointer;
+        color: rgb(0, 0, 0, 0.6);
+      }
+
+      .business-container,
+      .premium-container {
+        display: none;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .photo-text-container {
+        display: none;
+      }
+    }
+
+    @media (max-width: 500px) {
+      gap: 0.625rem;
+      .photo-text-container {
+        display: none;
+      }
+    }
+
+    @media (max-width: 440px) {
+      gap: 0.375rem;
+      .notifications-container,
+      .messages-container {
+        display: none;
+      }
+    }
   }
 `;

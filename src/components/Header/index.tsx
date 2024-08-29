@@ -8,6 +8,7 @@ import { ChatCircleDots } from "phosphor-react";
 import { Bell } from "phosphor-react";
 import { CaretDown } from "phosphor-react";
 import { Gradient } from "phosphor-react";
+import { DotsThree } from "phosphor-react";
 import profileImage from "../../../public/profile.jpg";
 
 export function Header() {
@@ -33,6 +34,16 @@ export function Header() {
       </div>
 
       <div className="options-container">
+        <div className="search-media-container">
+          <button className="link-container">
+            <MagnifyingGlass
+              size={24}
+              weight="bold"
+              className="icon"
+            ></MagnifyingGlass>
+            <p className="text-container">Pesquisar</p>
+          </button>
+        </div>
         <div className="icon-text-container">
           <a href="" className="link-container">
             <HouseLine size={24} weight="fill" className="icon"></HouseLine>
@@ -51,7 +62,7 @@ export function Header() {
             <p className="text-container">Vagas</p>
           </a>
         </div>
-        <div className="icon-text-container">
+        <div className="icon-text-container messages-container">
           <a href="" className="link-container">
             <ChatCircleDots
               size={24}
@@ -61,7 +72,7 @@ export function Header() {
             <p className="text-container">Mensagens</p>
           </a>
         </div>
-        <div className="icon-text-container">
+        <div className="icon-text-container notifications-container">
           <a href="" className="link-container">
             <Bell size={24} weight="fill" className="icon"></Bell>
             <p className="text-container">Notificações</p>
@@ -77,6 +88,11 @@ export function Header() {
         </div>
       </div>
       <div className="business-premium-container">
+        <div className="button-options-media-container">
+          <button>
+            <DotsThree size={30} weight="bold" className="icon"></DotsThree>
+          </button>
+        </div>
         <div className="business-container">
           <Gradient
             size={28}
