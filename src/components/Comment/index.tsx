@@ -9,7 +9,6 @@ interface CommentProps {
   commenttime: number;
   commenttext: string;
   commentlikes: number;
-  commentresponses: number;
 }
 
 export function Comment({
