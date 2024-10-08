@@ -6,7 +6,7 @@
 
 ## Live Version
 
-**[Click here! :)] (https://carollimeres.github.io/linkedin-interface)**
+**[Click here! :)](https://carollimeres.github.io/linkedin-interface)**
 
 ## Project Overview
 

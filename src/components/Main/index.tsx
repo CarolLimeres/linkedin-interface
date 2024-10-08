@@ -1,5 +1,6 @@
 import { MainContainer } from "./styles";
 import userImage from "../../../public/profile.jpg";
+import image from "../../../public/pokemon.jpg";
 import { Image } from "phosphor-react";
 import { CalendarPlus } from "phosphor-react";
 import { Article } from "phosphor-react";
@@ -72,13 +73,13 @@ export function Main() {
 
       <div className="post-container">
         <Post
-          userphoto="profile.jpg"
+          userphoto={userImage}
           username="Carolina Limeres"
           position="Front-End Developer"
           time={20}
           text="I'm so beyond excited to announce that I'm starting a new role as an Front-End Developer at The Pokémon Company International this month! "
           links={arrayLinks}
-          image="pokemon.jpg"
+          image={image}
           likes={50}
           comments={10}
           shares={2}

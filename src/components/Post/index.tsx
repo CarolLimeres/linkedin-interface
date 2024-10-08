@@ -12,6 +12,8 @@ import { Smiley } from "phosphor-react";
 import { Image } from "phosphor-react";
 import { Comment } from "../Comment";
 
+import userphotocomment from "../../../public/usercomment.jpg";
+
 interface PostProps {
   userphoto: string;
   username: string;
@@ -42,7 +44,7 @@ export function Post({
       <div className="user-options-container">
         <div className="userphoto-username-container">
           <a href="/" className="userphoto-link">
-            <img src={`/public/${userphoto}`} alt="" className="userphoto" />
+            <img src={userphoto} alt="" className="userphoto" />
           </a>
           <div className="username-position-time-container">
             <a href="/" className="username-link">
@@ -94,7 +96,7 @@ export function Post({
       </div>
 
       <div className="post-image-container">
-        <img src={`/public/${image}`} alt="" className="post-image" />
+        <img src={image} alt="" className="post-image" />
       </div>
 
       <div className="likes-comments-shares-container">
@@ -143,11 +145,7 @@ export function Post({
       </div>
       <div className="add-comment-container">
         <div className="userphoto-container">
-          <img
-            src={`/public/${userphoto}`}
-            alt=""
-            className="userphoto-addcomment"
-          />
+          <img src={userphoto} alt="" className="userphoto-addcomment" />
         </div>
         <form action="" className="form-comment">
           <div className="input-comment-container">
@@ -173,7 +171,7 @@ export function Post({
           </button>
         </div>
         <Comment
-          userphotocomment="usercomment.jpg"
+          userphotocomment={userphotocomment}
           usernamecomment="Maurício Mendes Rossi"
           userpositioncomment="Front-End Developer at Critical TechWorks | BMW Group"
           commenttime={2}

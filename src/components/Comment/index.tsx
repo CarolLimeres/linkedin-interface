@@ -24,11 +24,7 @@ export function Comment({
       <div className="user-time-options-container">
         <div className="user-photo-container">
           <a href="" className="photo-link">
-            <img
-              src={`/public/${userphotocomment}`}
-              alt=""
-              className="userphotocomment"
-            />
+            <img src={userphotocomment} alt="" className="userphotocomment" />
           </a>
 
           <div className="username-position-container">

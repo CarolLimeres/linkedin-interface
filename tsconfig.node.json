@@ -1,13 +1,10 @@
 {
+  "extends": "./tsconfig.json", // Extende a configuração base
   "compilerOptions": {
-    "composite": true,
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-    "skipLibCheck": true,
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "noEmit": true
+    "outDir": "./dist", // Diretório de saída
+    "types": ["node"], // Inclui definições de tipo do Node.js
+    "module": "commonjs" // Para compatibilidade com módulos do Node.js
   },
-  "include": ["vite.config.ts"]
+  "include": ["src/**/*"], // Inclui todos os arquivos dentro da pasta src
+  "exclude": ["node_modules"]
 }

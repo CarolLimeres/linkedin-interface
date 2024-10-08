@@ -1,5 +1,6 @@
-import { MenuContainer } from "./styles";
+import { BackgroundContainer, MenuContainer } from "./styles";
 import userImage from "../../../public/profile.jpg";
+import background from "../../../public/background.jpg";
 import premium from "../../../public/premium.svg";
 import { BookmarkSimple } from "phosphor-react";
 import { Plus } from "phosphor-react";
@@ -8,7 +9,8 @@ export function Menu() {
   return (
     <MenuContainer>
       <div className="user-container">
-        <div className="background-container"></div>
+        {/* <div className="background-container"></div> */}
+        <BackgroundContainer image={background}></BackgroundContainer>
 
         <img src={userImage} alt="" className="image-container" />
         <div className="name-office-container">

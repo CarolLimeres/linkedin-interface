@@ -1,18 +1,12 @@
 import styled from "styled-components";
-
-interface BackgroundContainerProps {
-  image: string;
-}
-
-export const BackgroundContainer = styled.div<BackgroundContainerProps>`
+export const BackgroundContainer = styled.div `
   background-image: url(${(props) => props.image});
   background-position: center;
   background-size: cover;
   height: 3.516rem;
   border-radius: 0.4rem 0.4rem 0 0;
 `;
-
-export const MenuContainer = styled.div`
+export const MenuContainer = styled.div `
   .user-container,
   .options-container {
     background-color: #ffff;
